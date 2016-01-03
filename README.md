@@ -1,42 +1,25 @@
-Numix is a modern flat theme with a combination of light and dark elements. It supports Gnome, Unity, XFCE and Openbox.
+# Numix
 
-Numix is a part of the [Numix Project](http://numixproject.org).
+This is a fork of Numix, a modern flat theme of [Numix Project](https://numixproject.org/), adapted to use the [Base 16 Ocean](http://chriskempson.github.io/base16/#ocean) colour scheme.
 
-### Manual installation
+## Installation
 
-First, you need to compile the theme using the [Sass](http://sass-lang.com/) compiler.
+The [Sass](http://sass-lang.com/) compiler is required to build the theme. To install Sass, first install Ruby with RubyGems and then install `sass` with `gem install sass`.
 
-To install Sass, install ruby and the gem command using your distro's package manager. Then install `sass` with the `gem` command,
+You'll also need `glib-compile-schemas` and `gdk-pixbuf-pixdata` in your path to generate the gresource binary. On Debian, those can be installed by the following command:
 
-`gem install sass`
+```sh
+sudo apt-get install libglib2.0-0 libgdk-pixbuf2.0-dev libxml2-utils
+```
 
-You'll also need the following commands in your path to generate the gresource binary. Install them using your distro's package manager.
-
-* `glib-compile-schemas`
-* `gdk-pixbuf-pixdata`
-
-After installing all the dependencies, switch to the cloned directory and, run the following in Terminal,
+After installing all the dependencies, switch to the cloned directory and, run the following:
 
 ```sh
 make
 sudo make install
 ```
 
-To set the theme in Gnome, run the following commands in Terminal,
-
-```sh
-gsettings set org.gnome.desktop.interface gtk-theme "Numix"
-gsettings set org.gnome.desktop.wm.preferences theme "Numix"
-```
-
-To set the theme in Xfce, run the following commands in Terminal,
-
-```sh
-xfconf-query -c xsettings -p /Net/ThemeName -s "Numix"
-xfconf-query -c xfwm4 -p /general/theme -s "Numix"
-```
-
-### For developers
+## For developers
 
 If you want to hack on the theme, make sure you have the `inotifywait` command available, which is used for watching and automatically building the files.
 
@@ -48,14 +31,7 @@ make watch
 
 If you change any assets, you'll need to regenerate the `gtk.gresource.xml` and `gtk.gresource` files. You can use [grrr](https://github.com/satya164/grrr) to do it easily.
 
-### Requirements
+## Requirements
 
-GTK+ 3.16 or above
-
-Murrine theme engine
-
-### Code and license
-
-Report bugs or contribute at [GitHub](https://github.com/shimmerproject/Numix)
-
-License: GPL-3.0+
+ * GTK+ 3.16 or above
+ * Murrine theme engine
