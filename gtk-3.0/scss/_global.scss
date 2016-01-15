@@ -2,19 +2,23 @@
 
 @import "functions";
 
-// default color scheme
-$bg_color: if($variant == "dark", #444, #eee);
-$fg_color: if($variant == "dark", #ddd, #555);
-$base_color: if($variant == "dark", #333, #fff);
-$text_color: if($variant == "dark", #eee, #333);
-$selected_bg_color: #f0544c;
-$selected_fg_color: #fff;
-$tooltip_bg_color: #444;
-$tooltip_fg_color: #eee;
+// light colors
+$light_bg_color: #eee;
+$light_fg_color: #555;
+$light_base_color: #fff;
+$light_text_color: #333;
 
 // dark colors
 $dark_bg_color: #444;
 $dark_fg_color: #eee;
+$dark_base_color: #333;
+$dark_text_color: #eee;
+
+// default color scheme
+$bg_color: if($variant == "dark", $dark_bg_color, $light_bg_color);
+$fg_color: if($variant == "dark", $dark_fg_color, $light_fg_color);
+$base_color: if($variant == "dark", $dark_base_color, $light_base_color);
+$text_color: if($variant == "dark", $dark_text_color, $light_text_color);
 
 // shadows
 $dark_shadow: #000;
@@ -25,6 +29,8 @@ $black: #000;
 $white: #fff;
 
 // misc colors used by gtk+
+$selected_bg_color: #f0544c;
+$selected_fg_color: #fff;
 $info_fg_color: #fff;
 $info_bg_color: #03a9f4;
 $warning_fg_color: #fff;
@@ -55,6 +61,9 @@ $panel_fg_color: $dark_fg_color;
 
 $osd_bg: $dark_bg_color;
 $osd_fg: $dark_fg_color;
+
+$tooltip_bg_color: $dark_bg_color;
+$tooltip_fg_color: $dark_fg_color;
 
 $lightdm_bg_color: $dark_bg_color;
 $lightdm_fg_color: $dark_fg_color;
