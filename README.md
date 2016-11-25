@@ -9,7 +9,7 @@ The [Sass](http://sass-lang.com/) compiler is required to build the theme. To in
 You'll also need `glib-compile-schemas` and `gdk-pixbuf-pixdata` in your path to generate the gresource binary. On Debian, those can be installed by the following command:
 
 ```sh
-sudo apt-get install libglib2.0-0 libgdk-pixbuf2.0-dev libxml2-utils
+sudo apt-get install libglib2.0-dev libgdk-pixbuf2.0-dev libxml2-utils
 ```
 
 After installing all the dependencies, switch to the cloned directory and, run the following:
