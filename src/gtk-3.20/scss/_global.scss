@@ -68,14 +68,14 @@ $switch_slider_bg_color: #fbfbfb;
 $toolbar_bg_color: $bg_color;
 $toolbar_fg_color: $fg_color;
 
-$titlebar_bg_color: $dark_bg_color;
+$titlebar_bg_color: #4f5b66; // Base 02
 $titlebar_fg_color: $dark_fg_color;
 
-$menu_bg_color: $dark_bg_color;
-$menu_fg_color: $dark_fg_color;
+$menu_bg_color: $bg_color;
+$menu_fg_color: $fg_color;
 
-$menubar_bg_color: $dark_bg_color;
-$menubar_fg_color: $dark_fg_color;
+$menubar_bg_color: $bg_color;
+$menubar_fg_color: $fg_color;
 
 $tooltip_bg_color: $dark_bg_color;
 $tooltip_fg_color: $dark_fg_color;
