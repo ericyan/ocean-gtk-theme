@@ -21,7 +21,7 @@ $base_color: if($variant == "dark", $dark_base_color, $light_base_color);
 $text_color: if($variant == "dark", $dark_text_color, $light_text_color);
 
 $selected_bg_color: #8fa1b3; // Base 0D
-$selected_fg_color: #4f5b66; // Base 02
+$selected_fg_color: #eff1f5; // Base 07
 $info_fg_color: #96b5b4;     // Base 0C
 $info_bg_color: #65737e;     // Base 03
 $warning_fg_color: #d08770;  // Base 09
