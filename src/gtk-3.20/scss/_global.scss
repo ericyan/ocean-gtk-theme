@@ -22,18 +22,20 @@ $text_color: if($variant == "dark", $dark_text_color, $light_text_color);
 
 $selected_bg_color: #8fa1b3; // Base 0D
 $selected_fg_color: #eff1f5; // Base 07
-$info_fg_color: #96b5b4;     // Base 0C
-$info_bg_color: #65737e;     // Base 03
-$warning_fg_color: #d08770;  // Base 09
-$warning_bg_color: #65737e;  // Base 03
-$question_fg_color: #ebcb8b; // Base 0A
-$question_bg_color: #65737e; // Base 03
-$error_fg_color: #bf616a;    // Base 08
-$error_bg_color: #65737e;    // Base 03
 $link_color: #8fa1b3;        // Base 0D
 $success_color: #a3be8c;     // Base 0B
 $warning_color: #d08770;     // Base 09
+$question_color: #b48ead;    // Base 0E
 $error_color: #bf616a;       // Base 08
+
+$info_bg_color: #eff1f5;     // Base 07
+$info_fg_color: $light_fg_color;
+$warning_bg_color: shade($warning_color, 1.5);
+$warning_fg_color: $warning_color;
+$question_bg_color: shade($question_color, 1.5);
+$question_fg_color: $question_color;
+$error_bg_color: shade($error_color, 1.5);
+$error_fg_color: $error_color;
 
 $selected_borders_color: if($variant == 'light', darken($selected_bg_color, 30%), darken($selected_bg_color, 20%));
 $borders_color: if($variant == 'light', shade($bg_color, .85), shade($bg_color, .88));

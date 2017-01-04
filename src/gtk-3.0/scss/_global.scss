@@ -20,6 +20,23 @@ $fg_color: if($variant == "dark", $dark_fg_color, $light_fg_color);
 $base_color: if($variant == "dark", $dark_base_color, $light_base_color);
 $text_color: if($variant == "dark", $dark_text_color, $light_text_color);
 
+$selected_bg_color: #8fa1b3; // Base 0D
+$selected_fg_color: #eff1f5; // Base 07
+$link_color: #8fa1b3;        // Base 0D
+$success_color: #a3be8c;     // Base 0B
+$warning_color: #d08770;     // Base 09
+$question_color: #b48ead;    // Base 0E
+$error_color: #bf616a;       // Base 08
+
+$info_bg_color: #eff1f5;     // Base 07
+$info_fg_color: $light_fg_color;
+$warning_bg_color: shade($warning_color, 1.5);
+$warning_fg_color: $warning_color;
+$question_bg_color: shade($question_color, 1.5);
+$question_fg_color: $question_color;
+$error_bg_color: shade($error_color, 1.5);
+$error_fg_color: $error_color;
+
 // shadows
 $dark_shadow: #000;
 $light_shadow: #fff;
@@ -29,20 +46,6 @@ $black: #000;
 $white: #fff;
 
 // misc colors used by gtk+
-$selected_bg_color: #8fa1b3; // Base 0D
-$selected_fg_color: #eff1f5; // Base 07
-$info_fg_color: #96b5b4;     // Base 0C
-$info_bg_color: #65737e;     // Base 03
-$warning_fg_color: #d08770;  // Base 09
-$warning_bg_color: #65737e;  // Base 03
-$question_fg_color: #ebcb8b; // Base 0A
-$question_bg_color: #65737e; // Base 03
-$error_fg_color: #bf616a;    // Base 08
-$error_bg_color: #65737e;    // Base 03
-$link_color: #8fa1b3;        // Base 0D
-$success_color: #a3be8c;     // Base 0B
-$warning_color: #d08770;     // Base 09
-$error_color: #bf616a;       // Base 08
 
 $toolbar_bg_color: $bg_color;
 $toolbar_fg_color: $fg_color;
