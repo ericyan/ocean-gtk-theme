@@ -1,4 +1,4 @@
-# Numix
+# Ocean
 
 This is a fork of Numix, a modern flat theme of [Numix Project](https://numixproject.org/), adapted to use the [Base 16 Ocean](http://chriskempson.github.io/base16/#ocean) colour scheme.
 
