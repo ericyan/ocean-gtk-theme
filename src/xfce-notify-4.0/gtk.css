@@ -1,0 +1,19 @@
+/* Docs: http://docs.xfce.org/apps/notifyd/theming */
+
+#XfceNotifyWindow {
+  border-radius: 1px;
+  border: 1px solid #c0c5ce; /* Base 05 */
+  background-color: #dfe1e8; /* Base 06 */
+  color: #4f5b66;            /* Base 02 */
+}
+
+#XfceNotifyWindow label#summary {
+  font-weight: bold;
+  color: #343d46;            /* Base 01 */
+}
+
+#XfceNotifyWindow button {
+  margin-top: 0.5em;
+  background-color: #eff1f5; /* Base 07 */
+  color: #65737e;            /* Base 03 */
+}
